@@ -14,57 +14,222 @@
   </head>
   <body>
     <header>
-      <h1 class="brand">Maison Sarah</h1>
-      <p><em>Baked with love in every bite</em></p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order Online</a>
-      </nav>
+      <div class="container header-bar">
+        <div>
+          <h1 class="brand">Maison Sarah</h1>
+          <p><em>Baked with love in every bite</em></p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order Online</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1>Our Menu</h1>
-      <p class="tagline">
-        Explore our selection of freshly baked bread, handcrafted cakes,
-        delicious cupcakes, and freshly brewed coffee.
-      </p>
-      <ul>
-        <li>
-          Bread
-          <ul>
-            <li>Sourdough Loaf <span class="price">€4.50</span></li>
-            <li>French Baguette <span class="price">€2.80</span></li>
-            <li>Whole Wheat Bread <span class="price">€3.90</span></li>
-            <li>Brioche Loaf <span class="price">€5.20</span></li>
-          </ul>
-        </li>
-        <li>
-          Cakes
-          <ul>
-            <li>Chocolate Cake <span class="price">€5.50/slice</span></li>
-            <li>Cheesecake <span class="price">€5.20/slice</span></li>
-            <li>Ube Cake <span class="price">€5.80/slice</span></li>
-          </ul>
-        </li>
-        <li>
-          Cupcakes
-          <ul>
-            <li>Red Velvet Cupcake <span class="price">€3.50</span></li>
-            <li>Blueberry Cupcake <span class="price">€3.30</span></li>
-            <li>Chocolate Marble Cupcake <span class="price">€3.40</span></li>
-          </ul>
-        </li>
-        <li>
-          Coffee
-          <ul>
-            <li>Brewed Coffee <span class="price">€2.80</span></li>
-            <li>Caramel Macchiato <span class="price">€4.20</span></li>
-            <li>Cappuccino <span class="price">€3.80</span></li>
-            <li>Iced Mocha <span class="price">€4.50</span></li>
-            <li>Iced Latte <span class="price">€4.20</span></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p class="tagline">
+          Explore our selection of freshly baked bread, handcrafted cakes,
+          delicious cupcakes, and freshly brewed coffee.
+        </p>
+
+        <ul>
+          <li>
+            Bread
+            <ul>
+              <li>Sourdough Loaf <span class="price">€4.50</span></li>
+              <li>French Baguette <span class="price">€2.80</span></li>
+              <li>Whole Wheat Bread <span class="price">€3.90</span></li>
+              <li>Brioche Loaf <span class="price">€5.20</span></li>
+            </ul>
+          </li>
+          <li>
+            Cakes
+            <ul>
+              <li>Chocolate Cake <span class="price">€5.50/slice</span></li>
+              <li>Cheesecake <span class="price">€5.20/slice</span></li>
+              <li>Ube Cake <span class="price">€5.80/slice</span></li>
+            </ul>
+          </li>
+          <li>
+            Cupcakes
+            <ul>
+              <li>Red Velvet Cupcake <span class="price">€3.50</span></li>
+              <li>Blueberry Cupcake <span class="price">€3.30</span></li>
+              <li>Chocolate Marble Cupcake <span class="price">€3.40</span></li>
+            </ul>
+          </li>
+          <li>
+            Coffee
+            <ul>
+              <li>Brewed Coffee <span class="price">€2.80</span></li>
+              <li>Caramel Macchiato <span class="price">€4.20</span></li>
+              <li>Cappuccino <span class="price">€3.80</span></li>
+              <li>Iced Mocha <span class="price">€4.50</span></li>
+              <li>Iced Latte <span class="price">€4.20</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <section>
+          <h2>Weekend Specials</h2>
+          <div class="card-row">
+            <article class="card">
+              <img
+                src="images/croissant.jpg"
+                alt="A freshly baked premium butter croissant is served on a white plate with a cup of coffee in the background."
+              />
+              <h3>Premium Butter Croissant</h3>
+              <p class="price">€2.90</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="images/cinnamon.jpg"
+                alt="A warm cinnamon roll topped with creamy icing is served on a white plate beside a dessert fork."
+              />
+              <h3>Cinnamon Roll</h3>
+              <p class="price">€3.20</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="images/tresleches.jpg"
+                alt="A slice of Tres Leches cake topped with whipped cream and a fresh strawberry is served on a dessert plate."
+              />
+              <h3>Tres Leches</h3>
+              <p class="price">€4.50</p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Opening Hours</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Monday to Friday</td>
+                <td>07:00 - 19:00</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>09:00 - 18:00</td>
+              </tr>
+              <tr>
+                <td>Public Holidays</td>
+                <td>09:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Price List</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Bread</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sourdough Loaf</td>
+                <td>€4.50</td>
+              </tr>
+              <tr>
+                <td>French Baguette</td>
+                <td>€2.80</td>
+              </tr>
+              <tr>
+                <td>Whole Wheat Bread</td>
+                <td>€3.90</td>
+              </tr>
+              <tr>
+                <td>Brioche Loaf</td>
+                <td>€5.20</td>
+              </tr>
+
+              <tr>
+                <td>Cakes</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Chocolate Cake</td>
+                <td>€5.50/slice</td>
+              </tr>
+              <tr>
+                <td>Cheesecake</td>
+                <td>€5.20/slice</td>
+              </tr>
+              <tr>
+                <td>Ube Cake</td>
+                <td>€5.80/slice</td>
+              </tr>
+
+              <tr>
+                <td>Cupcakes</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Red Velvet Cupcake</td>
+                <td>€3.50</td>
+              </tr>
+              <tr>
+                <td>Blueberry Cupcake</td>
+                <td>€3.30</td>
+              </tr>
+              <tr>
+                <td>Chocolate Marble Cupcake</td>
+                <td>€3.40</td>
+              </tr>
+
+              <tr>
+                <td>Coffee</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Brewed Coffee</td>
+                <td>€2.80</td>
+              </tr>
+              <tr>
+                <td>Caramel Macchiato</td>
+                <td>€4.20</td>
+              </tr>
+              <tr>
+                <td>Cappuccino</td>
+                <td>€3.80</td>
+              </tr>
+              <tr>
+                <td>Iced Mocha</td>
+                <td>€4.50</td>
+              </tr>
+              <tr>
+                <td>Iced Latte</td>
+                <td>€4.20</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
     </main>
     <footer>
       <p>© 2026 Maison Sarah. All rights reserved.</p>

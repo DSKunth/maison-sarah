@@ -12,23 +12,166 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
-      <h1 class="brand">Maison Sarah</h1>
-      <p><em>Baked with love in every bite</em></p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order Online</a>
-      </nav>
+      <div class="container header-bar">
+        <div>
+          <h1 class="brand">Maison Sarah</h1>
+          <p><em>Baked with love in every bite</em></p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order Online</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <h1>Order Online</h1>
-      <p>
-        Our online pre-order form is coming soon. In the meantime, feel free to
-        visit us in person or contact us by phone or email to place your order.
-      </p>
+      <div class="container">
+        <h1>Order Online</h1>
+
+        <form>
+          <fieldset>
+            <legend>Who is picking up</legend>
+
+            <label for="customer-name">Name</label>
+            <input
+              type="text"
+              id="customer-name"
+              name="customer-name"
+              class="field"
+              required
+              placeholder="Sarah Lambert"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="field"
+              required
+              placeholder="hello@maisonsarah.com"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup Day</legend>
+
+            <label>Day</label>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="saturday"
+                name="pickup-day"
+                value="Saturday"
+                checked
+              />
+              <label for="saturday">Saturday</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="monday"
+                name="pickup-day"
+                value="Monday"
+              />
+              <label for="monday">Monday</label>
+            </div>
+
+            <label for="pickup-time">Pickup Time</label>
+
+            <select id="pickup-time" name="pickup-time" class="field" required>
+              <option value="" selected disabled>
+                -- Please choose a pickup time --
+              </option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Order</legend>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="croissant"
+                name="products"
+                value="Premium Butter Croissant"
+              />
+              <label for="croissant">Premium Butter Croissant</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="cinnamon-roll"
+                name="products"
+                value="Cinnamon Roll"
+              />
+              <label for="cinnamon-roll">Cinnamon Roll</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="tres-leches"
+                name="products"
+                value="Tres Leches"
+              />
+              <label for="tres-leches">Tres Leches</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="chocolate-cake"
+                name="products"
+                value="Chocolate Cake"
+              />
+              <label for="chocolate-cake">Chocolate Cake</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="sourdough"
+                name="products"
+                value="Sourdough Loaf"
+              />
+              <label for="sourdough">Sourdough Loaf</label>
+            </div>
+
+            <label for="notes">Additional Notes</label>
+
+            <textarea
+              id="notes"
+              name="notes"
+              class="field"
+              rows="5"
+              maxlength="300"
+              placeholder="Let us know if you have any special requests."
+            >
+            </textarea>
+
+            <button type="submit">Place Pre-Order</button>
+          </fieldset>
+        </form>
+      </div>
     </main>
+
     <footer>
       <p>© 2026 Maison Sarah. All rights reserved.</p>
     </footer>
